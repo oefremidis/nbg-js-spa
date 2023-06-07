@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="index">
+    <a href="#" id="go-about">Go to About</a>
+    <p>This is the home page</p>
+  </div>
+
+  <div id="about">
+    <a href="#" id="go-index">Go to Index</a>
+    <p>This is the about page</p>
+  </div>
+
+  <script>
+
+    document.getElementById('index').style.display = 'block';
+    document.getElementById('about').style.display = 'none';
+
+    document.getElementById('go-about').onclick = () => {
+      document.getElementById('index').style.display = 'none';
+      document.getElementById('about').style.display = 'block';
+    }
+
+    document.getElementById('go-index').onclick = () => {
+      document.getElementById('index').style.display = 'block';
+      document.getElementById('about').style.display = 'none';
+    }
+
+  </script>
+
+</body>
+
+</html>
